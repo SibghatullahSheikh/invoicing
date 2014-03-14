@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+files=$(dirname $(readlink -f "$BASH_SOURCE"))
+
+lang=$1
+xsl="$files/invoice-$1.xsl"
+
+if [[ ! -f "$xsl" ]]; then
+
+    echo "No XSL stylesheet file $xsl"
+    exit 1
+fi
+
+if [[ ! -f "$2" ]]; then
+
+    echo "Invoice file $2 does not exist"
+    exit 1
+fi
+
+xsltproc --stringparam base "$files/" "$xsl" "$2" | wkhtmltopdf --print-media-type --page-size A4 --margin-bottom 2.5cm \
+  --margin-left 3cm --margin-right 2.5cm --margin-top 2.5cm --grayscale --quiet - "${2%.xml}.pdf"

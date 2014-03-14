@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<invoice>
+    <number>9999</number>
+    <date>14.03.2014</date>
+    <due-date>14.04.2014</due-date>
+    <recipient>
+        <name>Some Company Ltd.</name>
+        <address>Some Address</address>
+        <contact>Representative person email/phone</contact>
+    </recipient>
+    <lines>
+        <line>
+            <description>Some development</description>
+            <unit>h</unit>
+            <amount>66</amount>
+            <price>15.00</price>
+        </line>
+    </lines>
+    <currency>EUR</currency>
+</invoice>

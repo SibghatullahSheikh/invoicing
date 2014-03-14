@@ -1,0 +1,94 @@
+body {
+    padding: 1em;
+    font-family: "Deja Vu Serif";
+    font-size: 10pt;
+}
+
+h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1em;
+    padding-left: 1em;
+    margin-left: 1px;
+    margin-top: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+table {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+th {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 1.5em;
+}
+
+.invoice-title {
+    float: left;
+}
+
+.invoice-date {
+    float: right;
+}
+
+.invoice-payment,
+.invoice-lines,
+.invoice-recipient,
+.invoice-issuer {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    width: 100%;
+}
+
+.head {
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.field {
+    font-style: italic;
+    width: 12em;
+    color: #333333;
+}
+
+.table-text {
+    text-align: left;
+}
+
+.table-number {
+    text-align: right;
+}
+
+.table-header {
+    padding-bottom: 1em;
+}
+
+.table-total {
+    padding-top: 1em;
+}
+
+.lines-amount {
+    width: 6em;
+}
+
+.lines-unit {
+    width: 10em;
+}
+
+.lines-total {
+    width: 9em;
+}
